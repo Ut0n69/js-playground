@@ -1,9 +1,12 @@
 import { Greeting } from '@/scripts/js/Greeting'
-import { str } from '@/scripts/ts/string'
+import { Person } from '@/scripts/ts/string'
 import '@/assets/css/style.css'
 ;(() => {
-  console.log('str: ', str)
+  const person = new Person({
+    name: 'Caroline',
+    age: '21'
+  })
 
-  const greeting = new Greeting('Caroline')
+  const greeting = new Greeting(person.getName())
   greeting.sayHi()
 })()

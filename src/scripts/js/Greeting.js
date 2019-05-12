@@ -4,6 +4,6 @@ export class Greeting {
   }
 
   sayHi() {
-    console.log(`Hi ${this._name}`)
+    document.write(`Hi ${this._name}`)
   }
 }

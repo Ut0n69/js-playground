@@ -1,5 +1,12 @@
 @import './variable.css';
+@import './reset.css';
 
 body {
+  margin: var(--space2);
   color: var(--color-black);
+}
+
+.title {
+  margin-bottom: var(--space2);
+  font-size: var(--fontSizeLv4);
 }

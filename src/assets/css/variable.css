@@ -1,4 +1,16 @@
 :root {
   --color-white: #fdfdfd;
   --color-black: #2b2a2a;
+
+  --spaceBase: 8px;
+  --space1: var(--spaceBase);
+  --space2: calc(var(--spaceBase) * 2);
+  --space4: calc(var(--spaceBase) * 4);
+  --space8: calc(var(--spaceBase) * 8);
+
+  --fontSizeBase: 8px;
+  --fontSizeLv1: var(--fontSizeBase);
+  --fontSizeLv2: calc(var(--fontSizeBase) * 2);
+  --fontSizeLv4: calc(var(--fontSizeBase) * 4);
+  --fontSizeLv8: calc(var(--fontSizeBase) * 8);
 }
