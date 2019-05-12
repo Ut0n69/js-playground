@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "webpack-dev-server",
-    "build": "webpack"
+    "build": "webpack",
+    "lint": "eslint --ext .js,.ts --ignore-path .eslintignore ."
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
+    "@typescript-eslint/eslint-plugin": "^1.8.0",
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.1",
     "eslint": "^5.16.0",

@@ -1,10 +1,15 @@
 module.exports = {
   root: true,
   env: {
-    browser: true,
-    node: true
+    browser: true
   },
-  extends: "eslint:recommended",
+  extends: [
+    'eslint:recommended',
+  ],
+  plugins: [
+    '@typescript-eslint'
+  ],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     'sourceType': 'module'
   },

@@ -3,6 +3,10 @@
   "eslint.run": "onSave",
   "eslint.enable": true,
   "eslint.validate": [
-    "javascript"
+    "javascript",
+    {
+      "language": "typescript",
+      "autoFix": true
+    }
   ]
 }
