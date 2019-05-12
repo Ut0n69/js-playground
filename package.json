@@ -4,7 +4,10 @@
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "webpack",
-    "lint": "eslint --ext .js,.ts --ignore-path .eslintignore ."
+    "lint": "npm-run-all -p lint:*",
+    "lint:js": "eslint --fix --ext .js --ignore-path .eslintignore .",
+    "lint:ts": "eslint --fix --ext .ts --ignore-path .eslintignore .",
+    "lint:css": "stylelint --fix \"**/*.css\""
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
@@ -18,8 +21,13 @@
     "eslint-plugin-prettier": "^3.1.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "^1.17.0",
+    "prettier-stylelint": "^0.4.2",
     "style-loader": "^0.23.1",
+    "stylelint": "^10.0.1",
+    "stylelint-config-recess-order": "^2.0.2",
+    "stylelint-config-recommended": "^2.2.0",
     "ts-loader": "^6.0.0",
     "typescript": "^3.4.5",
     "webpack": "^4.31.0",
