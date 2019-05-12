@@ -2,16 +2,16 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  mode: "development",
-  entry: "./src/scripts/index.js",
+  mode: 'development',
+  entry: './src/scripts/index.js',
   output: {
     filename: 'bundle.js',
     path: path.join(__dirname, 'dist')
   },
   resolve: {
-    extensions: [".js", ".ts"],
+    extensions: ['.js', '.ts'],
     alias: {
-      "@": path.resolve(__dirname, 'src/'),
+      '@': path.resolve(__dirname, 'src/'),
     }
   },
   module: {
@@ -19,10 +19,10 @@ module.exports = {
       {
         test: /\.js$/,
         use: [{
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
             presets: [
-              "@babel/preset-env"
+              '@babel/preset-env'
             ]
           }
         }]
@@ -30,15 +30,15 @@ module.exports = {
       {
         test: /\.ts$/,
         use: [{
-          loader: "ts-loader",
+          loader: 'ts-loader',
         }]
       },
       {
         test: /\.css/,
         use: [
-          "style-loader",
+          'style-loader',
           {
-            loader: "css-loader",
+            loader: 'css-loader',
             options: {
               sourceMap: true
             }
@@ -47,13 +47,13 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        loader: "html-loader"
+        loader: 'html-loader'
       }
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html",
+      template: './src/index.html',
     })
   ],
   devtool: 'inline-source-map',
