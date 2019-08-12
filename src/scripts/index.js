@@ -1,5 +1,5 @@
 import { Greeting } from '@/scripts/js/Greeting'
-import { Person } from '@/scripts/ts/string'
+import { Person } from '@/scripts/ts/Person'
 import '@/assets/css/style.css'
 ;(() => {
   const person = new Person({
